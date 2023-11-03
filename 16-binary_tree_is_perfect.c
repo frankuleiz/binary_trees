@@ -29,13 +29,13 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	if (!tree)
 		return (0);
-	
+
 	height = binary_tree_height(tree);
 
 	while (tree)
 	{
-		tree = tree->left;
 		level++;
+		tree = tree->left;
 	}
 	return (level == height);
 }
