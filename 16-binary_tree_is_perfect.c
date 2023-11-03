@@ -17,7 +17,6 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	return (height_l > height_r ? height_l : height_r);
 }
 
-#include "binary_trees.h"
 /**
 * binary_tree_size - measures the size of a binary tree
 * @tree: a pointer to the root of thr to measure the size
